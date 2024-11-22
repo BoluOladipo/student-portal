@@ -1,0 +1,191 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    overflow: hidden; 
+}
+
+
+div.background {
+    background: lightblue;
+    border: 2px solid;
+    width: 90%; 
+    max-width: 800px; 
+    min-height: 80vh; 
+    margin: auto;
+    padding: 15px; 
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    overflow: hidden; 
+}
+
+
+div.transbox {
+    background-color: blue;
+    border: 1px solid white;
+    opacity: 0.9;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px; 
+}
+
+
+div.transbox .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    margin-bottom: 10px; 
+}
+
+
+div.transbox .logo {
+    width: 60px; 
+    height: auto; 
+}
+
+
+div.transbox .university-name {
+    font-size: 18px; 
+    font-weight: bold;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+
+div.transbox h1 {
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+    margin: 0;
+}
+
+.p {
+    color: white;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.moving-dots {
+    display: inline-block;
+    font-weight: bold;
+    animation: dots 1.5s steps(3, end) infinite;
+}
+
+@keyframes dots {
+    0%, 100% { content: "."; }
+    33% { content: ".."; }
+    66% { content: "..."; }
+}
+
+
+div.form-container {
+    background-color: white;
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    height: auto; 
+    flex-grow: 1; 
+}
+
+.form-inline {
+    display: grid;
+    grid-template-columns: 1fr; 
+    row-gap: 10px; 
+    column-gap: 10px; 
+    align-items: center;
+    width: 100%; 
+}
+
+
+.form-inline label {
+    font-size: 14px;
+    text-align: left;
+    margin: 0;
+}
+
+
+.form-inline input[type="text"],
+.form-inline input[type="number"],
+.form-inline input[type="password"],
+.form-inline input[type="file"] {
+    padding: 10px; 
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%; 
+    max-width: 100%; 
+}
+
+
+.form-inline .gender-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    grid-column: 1 / span 2;
+}
+
+
+.form-inline button {
+    background: linear-gradient(to right, #0073e9, #004089);
+    color: white;
+    border: none;
+    padding: 10px 20px; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    grid-column: 1 / span 2;
+    margin: auto;
+    width: fit-content;
+    transition: all 0.3s ease;
+}
+
+
+.form-inline button:hover {
+    background: linear-gradient(to right, #005bb5, #002d60);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+.form-inline input:hover[type="text"],
+.form-inline input:hover[type="number"],
+.form-inline input:hover[type="password"],
+.form-inline input:hover[type="file"] {
+background: white;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+transform: translateY(-2px);
+}
+.form-inline .gender-group:hover{
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); 
+}
+.sign {
+    text-align: center;
+    margin-top: 5px; 
+    grid-column: 1 / span 2;
+}
+
+.sign a {
+    text-decoration: underline;
+    color: #004089;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.error {
+    border: 1px solid red;
+}

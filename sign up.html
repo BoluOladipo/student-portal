@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="include/sign up.css"> 
+</head>
+<body>
+    <div class="background">
+        <div class="transbox">
+            <div class="logo-container">
+                <img  class="logo" src="images\b26dbc0d12a289615004b4d280d8ba84.jpg"alt="Logo" class="logo">
+                <span class="university-name">Bolu Oladipo University</span>
+            </div>
+          <h1><b><i>Sign Up Now</i></b></h1>
+          <p class="p">Sign up now and let's get started<span class="moving-dots">. . . . . .</span></p>
+        </div>
+        <div class="form-container">
+            <form class="form-inline" id="registerForm">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="First Name" required>
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" placeholder="Surname" required>
+                <label for="othernames">Other Names:</label>
+                <input type="text" id="othernames" name="othernames" placeholder="Other Names" required>
+                <label for="matric">Matric Number:</label>
+                <input type="text" id="matric" name="matric" placeholder="Matric Number" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <label for="gender" class="gender">Gender:</label>
+                <div class="gender-group">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <label for="fileUpload">Proof of Studentship:</label>
+                <input type="file" id="fileUpload" name="fileUpload" accept="image/*">
+                <button type="submit">Sign Up</button>
+                <div class="sign">Already have an account? <a href="sign in .html">Sign In</a></div>
+            </form>
+        </div>
+    </div>
+    <script src="Include\sign up.js"></script>
+</body>
+</html>
