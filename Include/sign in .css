@@ -93,7 +93,7 @@ div.form-container {
     box-sizing: border-box;
     flex-grow: 1;
     display: flex;
-    height: 290px;
+    height: 320px;
     flex-direction: column;
     justify-content: space-evenly;
 }
